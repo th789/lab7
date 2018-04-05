@@ -9,7 +9,7 @@ This lab provides practice with object-oriented programming: the
 creation of classes, interfaces, inheritance, subtyping, and dynamic
 dispatch. *)
 
-   
+
 (*====================================================================
 Part 1: Flatland
 
@@ -63,7 +63,7 @@ let area_adt (s : shape_adt) : float =
 Exercise 1B: Write a function that, given a list of elements of type
 shape_adt, returns a list of areas corresponding to every shape.
 ....................................................................*)
-    
+
 let list_area_adt (lst : shape_adt list) : float list =
   failwith "list_area_adt not implemented" ;;
 
@@ -285,13 +285,13 @@ The list should contain, in order:
 2. a circle at (0, -4) with radius 10
 3. a square at (-3, -2.5) with size 4.3
 ....................................................................*)
-   
+
 let s_list = [] ;;
 
 (* As you might recall, lists can only contain objects of the same
 type.  Why does the type system not show an error with your answer to
 2D?  What is the type of s_list? *)
-   
+
 (*====================================================================
 Part 3: Representation, Inheritance
 
@@ -351,7 +351,7 @@ position.
 (* UNCOMMENT ME AND COMPLETE
 class square_center_scale (p: point) (s: float) : shape = ...
  *)
-     
+
 (* Before we move on, consider: do you need to make any modifications
 to the area function you wrote in Exercise 2D to support these new
 classes? *)
@@ -416,7 +416,7 @@ Exercise 4A: Write a class, rect_quad, that represents a rectangle
 that implements a quad class type. Hint: By taking advantage of
 existing classes, you should only need to implement a single method.
 ......................................................................*)
-  
+
 (* UNCOMMENT ME
 class rect_quad (p : point) (w : float) (h : float) : quad =
   object
@@ -445,7 +445,7 @@ Exercise 4C: Create an instance of square_quad and name it sq. Then,
 pass it to the area function to find out its area and store the result
 in a variable "a".
 ......................................................................*)
-   
+
 (* UNCOMMENT ME
 let sq : quad = .. ;;
 
@@ -456,7 +456,7 @@ let a = .. ;;
 Exercise 4D: Write a function, area_list, that accepts a list of
 shapes and returns a list of areas.
 ......................................................................*)
-   
+
 let area_list (lst : shape list) : float list =
   failwith "area_list not implemented" ;;
 
